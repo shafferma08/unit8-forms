@@ -327,6 +327,281 @@ The <code>date</code> input type creates a control that lets users easily enter 
 <li><a href="https://www.w3schools.com/html/html_form_input_types.asp">W3Schools - HTML <code>&lt;input type="date"&gt;</code></a>: Tutorial and examples of different input types, including the date type.</li>
 </ul>
 <hr>
+<p><strong>Question 11:</strong><br>
+Consider the following code to create a search field:</p>
+<pre class=" language-html"><code class="prism  language-html"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>input</span> <span class="token attr-name">type</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>search<span class="token punctuation">"</span></span> <span class="token attr-name">name</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>search<span class="token punctuation">"</span></span> <span class="token punctuation">/&gt;</span></span>
+</code></pre>
+<p>What happens if the input type “search” is not supported by the browser?</p>
+<p><strong>Options:</strong></p>
+<ul>
+<li>A. The search field will display on the page but will not allow any user input.</li>
+<li>B. The search field will degrade to a standard text box.</li>
+<li>C. The search field will display a red X when text is entered.</li>
+<li>D. The search field will not display on the page.</li>
+</ul>
+<p><strong>Correct Answer:</strong></p>
+<ul>
+<li>B. The search field will degrade to a standard text box.</li>
+</ul>
+<p><strong>Resource and Explanation:</strong><br>
+HTML5 input types are designed to fail gracefully. If a browser does not support a specific input type, it will treat it as a standard <code>text</code> input type. This means that if the <code>search</code> input type is not supported, the browser will default to a text box where users can still enter text.</p>
+<p><strong>Example:</strong></p>
+<pre class=" language-html"><code class="prism  language-html"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>input</span> <span class="token attr-name">type</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>search<span class="token punctuation">"</span></span> <span class="token attr-name">name</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>search<span class="token punctuation">"</span></span> <span class="token attr-name">placeholder</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>Search...<span class="token punctuation">"</span></span> <span class="token punctuation">/&gt;</span></span>
+</code></pre>
+<p>Even in browsers that do not support the <code>search</code> input type, this field will still be usable as a text input.</p>
+<p><strong>Additional Resources:</strong></p>
+<ul>
+<li><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input/search">MDN Web Docs - <code>&lt;input type="search"&gt;</code></a>: Detailed documentation on the search input type.</li>
+<li><a href="https://www.w3schools.com/html/html_form_input_types.asp">W3Schools - HTML <code>&lt;input type="search"&gt;</code></a>: Overview of the search input type.</li>
+</ul>
+<hr>
+<p><strong>Question 12:</strong><br>
+What does the <code>range</code> form input type allow the user to do?</p>
+<p><strong>Options:</strong></p>
+<ul>
+<li>A. Select a number using a slider control.</li>
+<li>B. Enter one or more email addresses.</li>
+<li>C. Enter text for a search query.</li>
+<li>D. Enter rational integers or float values.</li>
+</ul>
+<p><strong>Correct Answer:</strong></p>
+<ul>
+<li>A. Select a number using a slider control.</li>
+</ul>
+<p><strong>Resource and Explanation:</strong><br>
+The <code>range</code> input type displays a slider interface that allows users to select a number within a specified range. It is typically used for settings that require a relative value, like volume, brightness, or zoom level.</p>
+<p><strong>Example:</strong></p>
+<pre class=" language-html"><code class="prism  language-html"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>label</span> <span class="token attr-name">for</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>volume<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>Volume:<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>label</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>input</span> <span class="token attr-name">type</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>range<span class="token punctuation">"</span></span> <span class="token attr-name">id</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>volume<span class="token punctuation">"</span></span> <span class="token attr-name">name</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>volume<span class="token punctuation">"</span></span> <span class="token attr-name">min</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>0<span class="token punctuation">"</span></span> <span class="token attr-name">max</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>100<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>
+</code></pre>
+<p>In this example, the <code>range</code> input creates a slider for volume control that users can drag between the minimum value of 0 and the maximum value of 100.</p>
+<p><strong>Additional Resources:</strong></p>
+<ul>
+<li><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input/range">MDN Web Docs - <code>&lt;input type="range"&gt;</code></a>: Detailed documentation on the range input type.</li>
+<li><a href="https://www.w3schools.com/html/html_form_input_types.asp">W3Schools - HTML <code>&lt;input type="range"&gt;</code></a>: Tutorial and examples of the range input type.</li>
+</ul>
+<hr>
+<p><strong>Question 13:</strong><br>
+Doug has been asked to create a form. He is unsure how to create the border and Student Course Selection title. Which element should Doug use?</p>
+<p><strong>Options:</strong></p>
+<ul>
+<li>A. <code>&lt;legend&gt;</code></li>
+<li>B. <code>&lt;outline&gt;</code></li>
+<li>C. <code>&lt;caption&gt;</code></li>
+<li>D. <code>&lt;label&gt;</code></li>
+</ul>
+<p><strong>Correct Answer:</strong></p>
+<ul>
+<li>A. <code>&lt;legend&gt;</code></li>
+</ul>
+<p><strong>Resource and Explanation:</strong><br>
+The <code>&lt;legend&gt;</code> element is used to provide a caption or title for the content of its parent <code>&lt;fieldset&gt;</code> element. If Doug wants to create a titled group with a border around the form controls, he should use the <code>&lt;fieldset&gt;</code> element to create the border and include a <code>&lt;legend&gt;</code> to give it a title.</p>
+<p><strong>Example:</strong></p>
+<pre class=" language-html"><code class="prism  language-html"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>form</span><span class="token punctuation">&gt;</span></span>
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>fieldset</span><span class="token punctuation">&gt;</span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>legend</span><span class="token punctuation">&gt;</span></span>Student Course Selection<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>legend</span><span class="token punctuation">&gt;</span></span>
+    <span class="token comment">&lt;!-- Form controls go here --&gt;</span>
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>fieldset</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>form</span><span class="token punctuation">&gt;</span></span>
+</code></pre>
+<p>In this example, the <code>&lt;fieldset&gt;</code> element creates a group for related form controls, and the <code>&lt;legend&gt;</code> provides a title that will be displayed at the top of the fieldset’s border.</p>
+<p><strong>Additional Resources:</strong></p>
+<ul>
+<li><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/legend">MDN Web Docs - <code>&lt;legend&gt;</code></a>: Detailed documentation on the legend element.</li>
+<li><a href="https://www.w3schools.com/tags/tag_legend.asp">W3Schools - HTML <code>&lt;legend&gt;</code> Tag</a>: Tutorial and examples of using the legend element.</li>
+</ul>
+<hr>
+<p><strong>Question 14:</strong><br>
+Hailey is creating a new web form. She wants to make it easy for mobile users to input text. What can she use to help accomplish this?</p>
+<p><strong>Options:</strong></p>
+<ul>
+<li>A. Use only semantic input type fields in the form.</li>
+<li>B. Use the required attribute on all form fields.</li>
+<li>C. Use <code>&lt;datalist&gt;</code> and <code>&lt;select&gt;</code> selection options.</li>
+<li>D. Use validation attributes on input textbox fields.</li>
+</ul>
+<p><strong>Correct Answer:</strong></p>
+<ul>
+<li>A. Use only semantic input type fields in the form.</li>
+</ul>
+<p><strong>Resource and Explanation:</strong><br>
+Semantic input types, like <code>email</code>, <code>tel</code>, <code>url</code>, and <code>date</code>, trigger the mobile device to display the most appropriate virtual keyboard, which helps users input text more easily. For instance, when a user focuses on an input field with <code>type="email"</code>, mobile browsers typically display a keyboard with an ‘@’ symbol and a ‘.com’ button, simplifying the input of email addresses.</p>
+<p><strong>Example:</strong></p>
+<pre class=" language-html"><code class="prism  language-html"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>form</span><span class="token punctuation">&gt;</span></span>
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>input</span> <span class="token attr-name">type</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>email<span class="token punctuation">"</span></span> <span class="token attr-name">name</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>user-email<span class="token punctuation">"</span></span> <span class="token attr-name">placeholder</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>Enter your email<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>input</span> <span class="token attr-name">type</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>tel<span class="token punctuation">"</span></span> <span class="token attr-name">name</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>user-phone<span class="token punctuation">"</span></span> <span class="token attr-name">placeholder</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>Enter your phone number<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>form</span><span class="token punctuation">&gt;</span></span>
+</code></pre>
+<p>In this example, the <code>email</code> and <code>tel</code> input types provide users with an optimized keyboard for entering their email address and telephone number, respectively.</p>
+<p><strong>Additional Resources:</strong></p>
+<ul>
+<li><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input">MDN Web Docs - <code>&lt;input&gt;</code>: The Input (Form Input) element</a>: Detailed documentation on the input element and its types.</li>
+<li><a href="https://www.w3schools.com/html/html_form_input_types.asp">W3Schools - HTML Form Input Types</a>: Overview of HTML form input types.</li>
+</ul>
+<hr>
+<p><strong>Question 15:</strong><br>
+Ray is reviewing a web form to resolve a rendering issue. The form should be displaying checkboxes but it is showing a textbox field. Ray notices that the <code>type</code> attribute is missing. He adds the attribute and checkbox value and the form is working well. Why did a textbox show when the <code>input</code> type was missing?</p>
+<p><strong>Options:</strong></p>
+<ul>
+<li>A. The HTML5 form element selects a textbox by default when the type attribute and value are missing.</li>
+<li>B. The server interprets the code and chooses a default type when the type attribute and value are missing.</li>
+<li>C. The operating system will infer a default type when the type attribute and value are missing.</li>
+<li>D. The browser infers a default type when the type attribute and value are missing.</li>
+</ul>
+<p><strong>Correct Answer:</strong></p>
+<ul>
+<li>D. The browser infers a default type when the type attribute and value are missing.</li>
+</ul>
+<p><strong>Resource and Explanation:</strong><br>
+When the <code>type</code> attribute is not specified on an <code>&lt;input&gt;</code> element, browsers will default to <code>type="text"</code>, resulting in a textbox. This is the standard behavior as defined by the HTML specification, ensuring that the form element remains usable even if the <code>type</code> attribute is omitted.</p>
+<p><strong>Example:</strong></p>
+<pre class=" language-html"><code class="prism  language-html"><span class="token comment">&lt;!-- Without type attribute, defaults to text --&gt;</span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>input</span> <span class="token attr-name">name</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>defaultInput<span class="token punctuation">"</span></span> <span class="token punctuation">/&gt;</span></span>
+
+<span class="token comment">&lt;!-- With type attribute set to checkbox --&gt;</span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>input</span> <span class="token attr-name">type</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>checkbox<span class="token punctuation">"</span></span> <span class="token attr-name">name</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>checkboxInput<span class="token punctuation">"</span></span> <span class="token punctuation">/&gt;</span></span>
+</code></pre>
+<p>In the first line, the browser will render a textbox. In the second line, it will render a checkbox as specified.</p>
+<p><strong>Additional Resources:</strong></p>
+<ul>
+<li><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input">MDN Web Docs - <code>&lt;input&gt;</code>: The Input (Form Input) element</a>: Detailed documentation on the input element and its default type.</li>
+<li><a href="https://www.w3schools.com/tags/tag_input.asp">W3Schools - HTML <code>&lt;input&gt;</code> Tag</a>: Explanation of the default behavior of the input tag without a <code>type</code> attribute.</li>
+</ul>
+<hr>
+<p><strong>Question 16:</strong><br>
+Sally has been asked to add a comments area to an existing web form. She should restrict the number of characters allowed to 500. What attribute will she use with the <code>&lt;textarea&gt;</code> element to achieve this?</p>
+<p><strong>Options:</strong></p>
+<ul>
+<li>A. The <code>cols</code> attribute</li>
+<li>B. The <code>maxlength</code> attribute</li>
+<li>C. The <code>fieldset</code> attribute</li>
+<li>D. The <code>rows</code> attribute</li>
+</ul>
+<p><strong>Correct Answer:</strong></p>
+<ul>
+<li>B. The <code>maxlength</code> attribute</li>
+</ul>
+<p><strong>Resource and Explanation:</strong><br>
+The <code>maxlength</code> attribute specifies the maximum number of characters that the user can enter into a <code>&lt;textarea&gt;</code>. For limiting the input to 500 characters, Sally would need to use this attribute.</p>
+<p><strong>Example:</strong></p>
+<pre class=" language-html"><code class="prism  language-html"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>textarea</span> <span class="token attr-name">name</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>comments<span class="token punctuation">"</span></span> <span class="token attr-name">maxlength</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>500<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>textarea</span><span class="token punctuation">&gt;</span></span>
+</code></pre>
+<p>In this example, users will be able to enter up to 500 characters in the comments area.</p>
+<p><strong>Additional Resources:</strong></p>
+<ul>
+<li><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/textarea">MDN Web Docs - <code>&lt;textarea&gt;</code></a>: Detailed documentation on the textarea element and the <code>maxlength</code> attribute.</li>
+<li><a href="https://www.w3schools.com/tags/tag_textarea.asp">W3Schools - HTML <code>&lt;textarea&gt;</code> Tag</a>: Tutorial and examples of using the textarea element and its attributes.</li>
+</ul>
+<hr>
+<p><strong>Question 17:</strong><br>
+Joe has been asked to go through all web forms on the company website and add the <code>placeholder</code> attribute to all textbox elements. Why is this important to do?</p>
+<p><strong>Options:</strong></p>
+<ul>
+<li>A. It specifies whether text submitted in a form field is to be wrapped.</li>
+<li>B. It specifies the field in which data will be entered when the user starts typing.</li>
+<li>C. It provides the user with a hint about what type of input is expected in the form field.</li>
+<li>D. It requires the user to enter a value in the form field before the form can be submitted.</li>
+</ul>
+<p><strong>Correct Answer:</strong></p>
+<ul>
+<li>C. It provides the user with a hint about what type of input is expected in the form field.</li>
+</ul>
+<p><strong>Resource and Explanation:</strong><br>
+The <code>placeholder</code> attribute is used to provide a short hint that describes the expected value of an input field (e.g., a sample value or a brief description of the expected format). The hint is displayed in the input field before the user enters a value, and it is not a substitute for a label element.</p>
+<p><strong>Example:</strong></p>
+<pre class=" language-html"><code class="prism  language-html"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>input</span> <span class="token attr-name">type</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>text<span class="token punctuation">"</span></span> <span class="token attr-name">name</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>firstName<span class="token punctuation">"</span></span> <span class="token attr-name">placeholder</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>Enter your first name<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>
+</code></pre>
+<p>In this example, the placeholder text “Enter your first name” gives users a hint about what they should input in the field.</p>
+<p><strong>Additional Resources:</strong></p>
+<ul>
+<li><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input#attr-placeholder">MDN Web Docs - <code>&lt;input&gt;</code>: The Input (Form Input) element</a>: Detailed documentation on the input element’s placeholder attribute.</li>
+<li><a href="https://www.w3schools.com/tags/att_input_placeholder.asp">W3Schools - HTML <code>&lt;input&gt;</code> placeholder Attribute</a>: Explanation and example of using the placeholder attribute.</li>
+</ul>
+<hr>
+<p><strong>Question 18:</strong><br>
+Beth has implemented the number input type on a web form. Marketing has emailed her that they are receiving numbers that are too large from submitted forms. What can Beth do to fix this?</p>
+<p><strong>Options:</strong></p>
+<ul>
+<li>A. Use the <code>list</code> attribute to define the range of numbers that can be submitted.</li>
+<li>B. Use the <code>max</code> attribute to define the highest number that can be submitted.</li>
+<li>C. Create an <code>alert()</code> box to inform the user of the highest number allowed.</li>
+<li>D. Create a datalist to bind to the <code>number</code> input type that defines allowable numbers.</li>
+</ul>
+<p><strong>Correct Answer:</strong></p>
+<ul>
+<li>B. Use the <code>max</code> attribute to define the highest number that can be submitted.</li>
+</ul>
+<p><strong>Resource and Explanation:</strong><br>
+The <code>max</code> attribute specifies the maximum value for an <code>&lt;input&gt;</code> element of type <code>number</code>. This attribute ensures that the form will not accept a number higher than the specified maximum, and will alert the user if they try to submit a number that is too large.</p>
+<p><strong>Example:</strong></p>
+<pre class=" language-html"><code class="prism  language-html"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>input</span> <span class="token attr-name">type</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>number<span class="token punctuation">"</span></span> <span class="token attr-name">name</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>quantity<span class="token punctuation">"</span></span> <span class="token attr-name">max</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>100<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>
+</code></pre>
+<p>In this example, the input field is limited to a maximum value of 100, and users will not be able to submit a number greater than that.</p>
+<p><strong>Additional Resources:</strong></p>
+<ul>
+<li><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input/number#max">MDN Web Docs - <code>&lt;input&gt;</code>: The Input (Form Input) element</a>: Detailed documentation on the <code>max</code> attribute for the number input type.</li>
+<li><a href="https://www.w3schools.com/tags/att_input_max.asp">W3Schools - HTML <code>&lt;input&gt;</code> max Attribute</a>: Explanation and example of using the <code>max</code> attribute.</li>
+</ul>
+<hr>
+<p><strong>Question 19:</strong><br>
+Company A just released their newly updated website. Immediately mobile device users began to send in complaints saying that the web form would not render properly. What did the web team forget to do?</p>
+<p><strong>Options:</strong></p>
+<ul>
+<li>A. Test the web forms thoroughly on various browsers and browser versions.</li>
+<li>B. Ensure that web form data submitted by users is processed on the server by JavaScript only.</li>
+<li>C. Validate the CSS using a validation service such as the W3C Markup Validation Service.</li>
+<li>D. Incorporate new HTML5 input types and attributes in the form.</li>
+</ul>
+<p><strong>Correct Answer:</strong></p>
+<ul>
+<li>A. Test the web forms thoroughly on various browsers and browser versions.</li>
+</ul>
+<p><strong>Resource and Explanation:</strong><br>
+Testing web forms across different browsers and their versions is crucial to ensure compatibility and proper rendering on all devices, including mobile. Failure to do so can result in rendering issues like the one described. This process is known as cross-browser testing and is essential for validating that web content works as expected for all users, regardless of their choice of browser.</p>
+<p><strong>Example:</strong><br>
+Cross-browser testing often involves using tools and services that simulate different browsers, or accessing the site on actual devices with different browser applications.</p>
+<p><strong>Additional Resources:</strong></p>
+<ul>
+<li><a href="https://developer.mozilla.org/en-US/docs/Learn/Tools_and_testing/Cross_browser_testing">MDN Web Docs - Cross browser testing</a>: Overview of strategies and tools for cross-browser testing.</li>
+<li><a href="https://www.browserstack.com/">BrowserStack</a>: A service for automated and manual cross-browser testing.</li>
+<li><a href="https://validator.w3.org/">W3C Markup Validation Service</a>: A validator that checks the markup validity of Web documents in HTML, XHTML, etc.</li>
+</ul>
+<hr>
+<p><strong>Question 20:</strong><br>
+Mario is creating a form that calculates how many years a person has until they can retire. Which element receives the result?</p>
+<p><strong>Given Code:</strong></p>
+<pre class=" language-html"><code class="prism  language-html"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>form</span> <span class="token attr-name">oninput</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>yrsToRet.value=parseInt(retAge.value) - parseInt(currAge.value)<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>input</span> <span class="token attr-name">type</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>number<span class="token punctuation">"</span></span> <span class="token attr-name">id</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>retAge<span class="token punctuation">"</span></span> <span class="token attr-name">value</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>68<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>input</span> <span class="token attr-name">type</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>number<span class="token punctuation">"</span></span> <span class="token attr-name">id</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>currAge<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>output</span> <span class="token attr-name">name</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>yrsToRet<span class="token punctuation">"</span></span> <span class="token attr-name">for</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>retAge currAge<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>output</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>form</span><span class="token punctuation">&gt;</span></span>
+</code></pre>
+<p><strong>Options:</strong></p>
+<ul>
+<li>A. output</li>
+<li>B. oninput</li>
+<li>C. input</li>
+<li>D. form</li>
+</ul>
+<p><strong>Correct Answer:</strong></p>
+<ul>
+<li>A. output</li>
+</ul>
+<p><strong>Resource and Explanation:</strong><br>
+The <code>&lt;output&gt;</code> element is used to represent the result of a calculation or user action within a form. In the given code, <code>yrsToRet</code> is the name of the <code>&lt;output&gt;</code> element that will display the result of the retirement age calculation.</p>
+<p><strong>Example:</strong></p>
+<pre class=" language-html"><code class="prism  language-html"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>form</span> <span class="token attr-name">oninput</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>result.value=parseInt(a.value) - parseInt(b.value)<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>
+  Retirement Age: <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>input</span> <span class="token attr-name">type</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>number<span class="token punctuation">"</span></span> <span class="token attr-name">id</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>a<span class="token punctuation">"</span></span> <span class="token attr-name">value</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>65<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>
+  Current Age: <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>input</span> <span class="token attr-name">type</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>number<span class="token punctuation">"</span></span> <span class="token attr-name">id</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>b<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>
+  Years to Retirement: <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>output</span> <span class="token attr-name">name</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>result<span class="token punctuation">"</span></span> <span class="token attr-name">for</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>a b<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>output</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>form</span><span class="token punctuation">&gt;</span></span>
+</code></pre>
+<p>In this example, as the user enters their current age, the <code>&lt;output&gt;</code> element updates to show the number of years until retirement.</p>
+<p><strong>Additional Resources:</strong></p>
+<ul>
+<li><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/output">MDN Web Docs - <code>&lt;output&gt;</code></a>: Detailed documentation on the output element.</li>
+<li><a href="https://www.w3schools.com/tags/tag_output.asp">W3Schools - HTML <code>&lt;output&gt;</code> Tag</a>: Tutorial and examples on using the output element.</li>
+</ul>
 </div>
 </body>
 
